@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookSelf</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="center">My Bookself</h1>
+    </header>
+    <main class="flex flex-col align-center">
+      <section class="input">
+        <div class="card">
+          <div class="c-head">
+            <h2>Isi Data Buku Anda</h2>
+          </div>
+          <div class="flex justify-center">
+            <form action="">
+              <div class="form flex flex-col">
+                <label for="judul" id="pp">Judul Buku <span>*</span></label>
+                <input
+                  type="text"
+                  name="judul"
+                  id="judul"
+                  placeholder="'Harry Potter'"
+                />
+                <small class="alert" id="validate-judul"></small>
+              </div>
+              <div class="form flex flex-col">
+                <label for="penulis">Penulis Buku <span>*</span></label>
+                <input
+                  type="text"
+                  name="penulis"
+                  id="penulis"
+                  placeholder="'JK. Rowling'"
+                />
+                <small class="alert" id="validate-penulis"></small>
+              </div>
+              <div class="form flex flex-col">
+                <label for="tahun">Tahun Terbit <span>*</span></label>
+                <input
+                  type="text"
+                  name="tahun"
+                  id="tahun"
+                  placeholder="'1997'"
+                />
+                <small class="alert" id="validate-tahun"></small>
+              </div>
+              <div class="form">
+                <input type="checkbox" name="selsai" id="selesai" />
+                <label for="selesai">Selesai dibaca?</label>
+              </div>
+              <div class="form-button">
+                <button type="submit" id="Submit">Input</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="search">
+          <input
+            type="text"
+            name=""
+            id="search"
+            placeholder="Cari 'Harry Potter'"
+          />
+        </div>
+      </section>
+      </div>
+      <section class="books flex">
+        <div class="card-book">
+          <div class="c-head">
+            <h3>Belum Selesai Dibaca</h3>
+          </div>
+          <div class="c-content content flex flex-col">
+            <div class="empty" id="empty1">
+              <p>Data Kosong...</p>
+              <p>Silahkan Isi Data</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-book">
+          <div class="c-head">
+            <h3>Sudah Selesai dibaca</h3>
+          </div>
+          <div class="c-content content flex flex-col">
+            <div class="empty" id="empty2">
+              <p>Data Kosong...</p>
+              <p>Silahkan Isi Data</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="center">
+      <p>&copy Muhammad Atthoriq Aziz</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
